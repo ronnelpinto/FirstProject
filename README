@@ -1,7 +1,5 @@
 #This is my first Java Project which I had done for Data Structures.
 #It is a User Defined dictionary where the user can insert his own words, delete the words he entered, update the words as well as view the same
-
-
-
 #A unique login id etc has been provided for each user to prevent others from modifying their dictionary
 
+#the data structure used in this project is a binary search tree to perform the various operations.
