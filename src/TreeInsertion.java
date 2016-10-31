@@ -14,9 +14,7 @@ public class TreeInsertion {
 	     boolean flag=true;
 	     if(root==null)
 	     {
-	         root=tnode;
-	        // return root;
-	              
+	         root=tnode;	              
 	     }
 	     else
 	     {
@@ -45,7 +43,6 @@ public class TreeInsertion {
 	            }
 	          }
 	     }
-	    // return root;
 	 }
 	 
 	 public void inorder(TNode root)
