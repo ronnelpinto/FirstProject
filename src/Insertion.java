@@ -6,34 +6,27 @@ public class Insertion {
 	public  void insert()throws IOException
 	{
 		Scanner in=new Scanner(System.in);  
-		//Writer output = null;
-		//Writer output1=null;
-		String word="";
-		String meaning="";
+		String word, meaning;
 		TreeInsertion ti=new TreeInsertion();
-		  //File file = new File("C:/word.txt");
-		  //File file1=new File("C:/meaning.txt");
 		  BufferedWriter output = new BufferedWriter(new FileWriter("C:/word.txt"));
 		  BufferedWriter output1 = new BufferedWriter(new FileWriter("C:/meaning.txt"));
 		  while(!(word.equalsIgnoreCase("quit")))
 		  {
-		  System.out.println("Enter a word with its meaning");
-		  word=in.nextLine();
-		  output.append(word);
-		  output.newLine();
-		  if(!(word.equalsIgnoreCase("quit")))
-		  {
-		  meaning=in.nextLine();
-		  output1.append(meaning);
-		  output1.newLine();
-		  
-		  }
+		  	System.out.println("Enter a word with its meaning");
+		  	word=in.nextLine();
+		  	output.append(word);
+		  	output.newLine();
+		  	if(!(word.equalsIgnoreCase("quit")))
+		  	{
+		  		meaning=in.nextLine();
+		  		output1.append(meaning);
+		  		output1.newLine();
+		  	}
 		  }
 		  
 		  output.close();
 		  output1.close();
-		  
-	      	
+		        	
 	        
 	        FileInputStream fstream = new FileInputStream("C:/word.txt");
 	        FileInputStream fstream1 = new FileInputStream("C:/meaning.txt");  
