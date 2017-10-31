@@ -1,4 +1,4 @@
-
+// Tree Node class.
 public class TNode
 {
     String word;
