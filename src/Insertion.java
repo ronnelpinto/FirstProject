@@ -1,18 +1,15 @@
 import java.io.*;
 import java.util.*;
 
-
 public class Insertion {
 	public  void insert()throws IOException
 	{
 		Scanner in=new Scanner(System.in);  
-		//Writer output = null;
-		//Writer output1=null;
+		
 		String word="";
 		String meaning="";
 		TreeInsertion ti=new TreeInsertion();
-		  //File file = new File("C:/word.txt");
-		  //File file1=new File("C:/meaning.txt");
+		  
 		  BufferedWriter output = new BufferedWriter(new FileWriter("C:/word.txt"));
 		  BufferedWriter output1 = new BufferedWriter(new FileWriter("C:/meaning.txt"));
 		  while(!(word.equalsIgnoreCase("quit")))
@@ -26,15 +23,13 @@ public class Insertion {
 		  meaning=in.nextLine();
 		  output1.append(meaning);
 		  output1.newLine();
-		  
+
 		  }
 		  }
-		  
+
 		  output.close();
 		  output1.close();
-		  
-	      	
-	        
+
 	        FileInputStream fstream = new FileInputStream("C:/word.txt");
 	        FileInputStream fstream1 = new FileInputStream("C:/meaning.txt");  
 	        DataInputStream in2 = new DataInputStream(fstream);
@@ -49,9 +44,7 @@ public class Insertion {
 		      
 		      	in2.close();
 		      	in1.close();
-		      	
-		      	
 		      	ti.inorder(ti.get_root());
-}
+	}
 
 }
